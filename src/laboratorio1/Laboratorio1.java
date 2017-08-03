@@ -11,9 +11,6 @@ package laboratorio1;
  */
 public class Laboratorio1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         App ven = new App();
         ven.setVisible(true); 

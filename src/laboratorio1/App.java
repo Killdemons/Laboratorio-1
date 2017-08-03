@@ -39,6 +39,11 @@ public class App extends javax.swing.JFrame {
         lblMenu.setText("Menu");
 
         btnNombre.setText("Nombres");
+        btnNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNombreActionPerformed(evt);
+            }
+        });
 
         btnLibros.setText("Libros");
 
@@ -72,6 +77,12 @@ public class App extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNombreActionPerformed
+        Nombres obj = new Nombres();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnNombreActionPerformed
 
     /**
      * @param args the command line arguments
